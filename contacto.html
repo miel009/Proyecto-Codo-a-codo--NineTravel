@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contacto.css">
 
     <title> NineTravel</title>
 </head>
@@ -23,23 +25,41 @@
     </header>
 
     <main>
-        <section>
-            <h2>Promociones</h2>
-            <p>Quod, aliquid nemo aspernatur dolore odio aut aliquam ut blanditiis delectus itaque sunt vitae exercitationem animi libero, vel hic eveniet cupiditate. Dicta deserunt repudiandae consectetur, aspernatur qui quibusdam accusantium esse.
-                Laudantium voluptates quibusdam omnis quos ducimus optio dicta velit fugit, iste quo quae error amet ipsa facere officiis a quod dignissimos dolorem laborum est! Dolorem aliquam aperiam ea quis maiores.
-                Incidunt perferendis minus ea tenetur nesciunt? Provident beatae tempore incidunt eveniet? Quis impedit odit quae nemo ducimus cupiditate modi deleniti dolores id, neque, atque odio quisquam nesciunt commodi possimus voluptas?
-                Quibusdam natus nesciunt incidunt dolorum. Alias, harum inventore quibusdam ad nihil molestiae debitis officiis ducimus corporis iusto magnam vel praesentium minus, perspiciatis consequatur ullam, pariatur adipisci? Velit repellendus voluptatibus minima.
-                Cupiditate commodi aut nulla quos soluta ab laboriosam id laudantium et dicta facere, ut asperiores possimus magnam esse impedit assumenda expedita modi quod quam tenetur porro. Placeat sequi quibusdam ipsa.
-               </p>
+        <section class="contact-form">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"  required>
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" required>
+
+                <label for="pasajeros">Pasajeros:</label>
+                <input type="number" id="pasajeros" name="pasajeros" required>
+
+                <label for="fecha-aproximada">Fecha aproximada:</label>
+                <input type="date" id="fecha-aproximada" name="fecha-aproximada" required>
+        
+                <label for="mensaje">Motivo de Contacto:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
         </section>
-        <section>
-            <h2>Novedades</h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, et suscipit. Officia molestias corrupti expedita sit cumque, commodi blanditiis optio, neque deleniti placeat beatae quas. Minima quasi optio beatae saepe.
-            Laboriosam illum asperiores voluptatem facilis. Dicta sint blanditiis ea voluptatum expedita laborum dolore natus ipsam accusamus modi maxime labore molestias, totam necessitatibus sapiente maiores quas in asperiores fuga repudiandae unde!
-            Accusamus esse ea quaerat error commodi quibusdam vero sunt velit assumenda, facilis iure reprehenderit corporis, aliquid excepturi dolore nam. Nihil exercitationem odio neque, provident eveniet amet pariatur hic excepturi obcaecati.
-            Ullam magni tempore commodi explicabo provident harum, corporis nihil earum ipsam voluptatum sint reiciendis inventore? Ex, vitae, unde eligendi quidem distinctio totam eaque blanditiis nemo animi explicabo sint, odit nesciunt!
-            Ut esse mollitia, est error quo omnis cum expedita possimus totam, veritatis, adipisci eum vitae! Veritatis, ipsa aliquam? In expedita odio atque eos ducimus harum, maiores dolores doloremque nulla. Assumenda?
-             </p>
+        <section class="datos-contacto">
+            <div>
+                <h2>Atencion al publico</h2>
+                <p><small>texto ejemplo</small></p>
+                <p><small>texto ejemplo</small></p>
+                <p><small>texto ejemplo</small></p>
+                <h2>Atencion al publico</h2>
+                <p><small>texto ejemplo</small></p>
+                <p><small>texto ejemplo</small></p>
+                <p><small>texto ejemplo</small></p>
+            </div>
         </section>
     </main>
 
