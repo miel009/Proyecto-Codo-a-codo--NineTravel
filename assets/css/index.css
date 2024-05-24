@@ -12,17 +12,16 @@
     display: block;
 }
 
+.cards-container {
+    justify-content: center;
+}
 
 /* TAMAÑO DEL DESKTOP */
 @media screen and (min-width: 1024px) {
 
-    /* MAIN */
     .cards-container {
-        display: flex;
-        flex-wrap: wrap;
         gap: 1rem;
         padding: 2rem;
-        justify-content: center;
     }
 }
 
@@ -30,14 +29,14 @@
 /* TAMAÑO DEL TABLET */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     h2 {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
 /* TAMAÑO DEL SMARTPHONE*/
 @media screen and (max-width: 767px) {
     
-    h2 {
-        font-size: 55px;
+    main h2 {
+        font-size: 40px;
     }
 }

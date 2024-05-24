@@ -1,3 +1,4 @@
+Estilos destinos
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas */
     grid-gap: 10px; /* Espacio entre las imágenes */
-    width: 100%; /* Ajusta el ancho del contenedor según sea necesario */
+    width: 95%; /* Ajusta el ancho del contenedor según sea necesario */
     margin: auto;
 }
 
@@ -19,7 +20,7 @@
 
 .grid-item img {
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: block;
 }
 
@@ -37,10 +38,14 @@
     font-size: 50px;
 }
 
+.slider-scrollbar, .slide-button{
+    display: none;
+}
+
 h1{
     text-align: center;
     color: green;
-    font-size: 50px;
+    font-size: 49px;
     margin-bottom: 50px;
 }
 h3{
@@ -146,8 +151,111 @@ a{
 
 /* TAMAÑO DEL SMARTPHONE*/
 @media screen and (max-width: 767px) {
+    h1{
+        font-size: 51px;
+    }
+
+    .containerGalery{
+        width: 95%;
+        margin: auto;
+    }
+
+    .grid-container {
+        display: grid;
+        font-size: 0;
+        grid-template-columns: repeat(4, 1fr); /* Dos columnas */
+        gap: 18px; /* Espacio entre las imágenes */
+        width: 100%; /* Ajusta el ancho del contenedor según sea necesario */
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .grid-item {
+        width: 555px;
+        height: 400px;
+        object-fit: cover;
+    }
+
     .text-overlay{
-        font-size: 5px;
+        font-size: 35px;
+    }
+    .slider-wrapper{
+        position: relative;
+    }
+
+    .slider-wrapper .slide-button{
+        position: absolute;
+        top: 52%;
+        height: 50px;
+        width: 50px;
+        border: none;
+        outline: none;
+        color: #FFF;
+        background-color: #000;
+        font-size: 25px;
+        cursor: pointer;
+        border-radius: 50%;
+        display: block;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    .slider-wrapper .slide-button:active{
+        background-color: #444;
+
+    }
+
+    .slider-wrapper .slide-button#prev-slide{
+        left: 5px;
+    }
+
+    .slider-wrapper .slide-button#next-slide{
+        right: 5px;
+    }
+
+    .containerGalery .slider-scrollbar{
+        height: 24px;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    .slider-scrollbar .scrollbar-track{
+        height: 2px;
+        width: 100%;
+        background: #000;
+        position: relative;
+        border-radius: 4px;
+        
+    }
+
+    .slider-scrollbar:hover .scrollbar-track{
+        height: 4px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb{
+        position: absolute;
+        height: 100%;
+        width: 25%;
+        background: gray;
+        border-radius: inherit;
+        cursor: grab;
+    }
+
+    .slider-scrollbar .scrollbar-thumb:active{
+        cursor: grabbing;
+        height: 8px;
+        top: -2px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -10px;
+        bottom: -10px;
+        
     }
 
     .card {

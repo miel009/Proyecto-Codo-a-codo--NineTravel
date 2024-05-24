@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/destinos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="icon" href="assets/img/logoCirculeBlanco.png">
     <title> NineTravel</title>
 </head>
 <body>
@@ -31,24 +32,37 @@
 
         <main>
             <h1>¡Vive Experiencias Inolvidables!</h1>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img src="/assets/img/naturaleza.jpg" alt="">
-                    <div class="text-overlay">Naturaleza y Turismo</div>
+            <div class="containerGalery">
+                <div class="slider-wrapper">
+                    <button id="prev-slide" class="slide-button material-symbols-rounded bi bi-caret-left"></button>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <img src="assets/img/naturaleza.jpg" alt="">
+                            <div class="text-overlay">Naturaleza y Turismo</div>
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/img/gastronomia.webp" alt="">
+                            <div class="text-overlay">Gastronomía</div>
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/img/cultura.jpg" alt="">
+                            <div class="text-overlay">Cultura</div>
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/img/playas.webp" alt="">
+                            <div class="text-overlay">Playas</div>
+                        </div>
+                    </div>
+                    
+                    <button id="next-slide" class="slide-button material-symbols-rounded bi bi-caret-right"></button>
                 </div>
-                <div class="grid-item">
-                    <img src="/assets/img/gastronomia.webp" alt="">
-                    <div class="text-overlay">Gastronomía</div>
-                </div>
-                <div class="grid-item">
-                    <img src="/assets/img/cultura.jpg" alt="">
-                    <div class="text-overlay">Cultura</div>
-                </div>
-                <div class="grid-item">
-                    <img src="/assets/img/playas.webp" alt="">
-                    <div class="text-overlay">Playas</div>
+                <div class="slider-scrollbar">
+                    <div class="scrollbar-track">
+                        <div class="scrollbar-thumb"></div>
+                    </div>
                 </div>
             </div>
+            
 
             <h3>Conoce los Destinos</h3>
             <div class="container">
@@ -114,5 +128,6 @@
 
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/destinos.js"></script>
 </body>
 </html>
