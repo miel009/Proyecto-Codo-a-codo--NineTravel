@@ -22,12 +22,15 @@ h2 {
     font-family: "Roboto Condensed", sans-serif;
     color: var(--bg-color);
     text-align: center;
-
 }
+
 
 p {
     font-family: "Roboto Condensed", sans-serif;
     box-sizing: border-box;
+    font-size: 20px;
+    padding-top: 10px;
+
 }
 
 header, main, footer {
@@ -69,10 +72,8 @@ main {
 }
 /*footer*/
 footer {
-    height: 5%;
+    height: 20%;
     background-color: var(--three-color);
-    text-align: center;
-    font-size: 25px;
     font-family: "Roboto Condensed", sans-serif;
     color: var(--four-color);
 }
