@@ -17,11 +17,16 @@
 }
 
 /*preguntas frecuenets*/
+main{
+    background-color: var(--four-color);
+}
+
 
 .containerPreg {
     margin-top: 70px;
     margin-bottom: 20px;
     padding-left: 150px;
+    padding-right: 150px;
 }
 /*del h2 del index*/
 .descripcion { 
@@ -74,6 +79,51 @@
     
 }
 
+/* marcas*/
+
+#logos-section {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    background-color: #76a8f3;
+}
+
+#logos-section p {
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--five-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.logos-container img {
+    height: 50px;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .logos-container img {
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .logos-container img {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logos-container img {
+        height: 40px;
+    }
+}
 
 
 /* TAMAÑO DEL DESKTOP */
