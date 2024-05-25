@@ -36,7 +36,6 @@ header, main, footer {
     font-family: "Roboto Condensed", sans-serif;
 }
 
-/*!!! adaptar tamano de header, deberia encimar el navegador */
 header {
     height: 120px;
     background-color: var(--four-color);
@@ -45,13 +44,6 @@ header {
 .LogoNineT {
     height: 100%;
 }
-
-/*aca deberia cambiar el aspecto del index si quiero agregar el video
-
-.contenedor-header {
-    display: flex;
-    align-items: flex-start;
-}*/
 
 nav {
     font-family: "Roboto Condensed", sans-serif;
@@ -72,16 +64,53 @@ nav a {
 }
 
 main {
-    height: 90%;
+    height: 100%;
     font-family: "Roboto Condensed", sans-serif;
 }
-
+/*footer*/
 footer {
     height: 5%;
     background-color: var(--three-color);
     text-align: center;
     font-size: 25px;
     font-family: "Roboto Condensed", sans-serif;
+    color: var(--four-color);
+}
+
+
+.conteiner-footer{
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+.text-center{
+    text-align: center;
+    padding-bottom: 20px;       
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+}
+.icono-foter{
+    color: var(--four-color);
+    text-align: center;
+}
+.pie {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;    
+}
+a:hover{
+    color:  #0d6efd;
+}
+
+i{
+    margin-top: 0px;
+    font-size: 2rem;
+    padding-right: 5px;
 }
 
 /* TAMAÑO DEL DESKTOP */
