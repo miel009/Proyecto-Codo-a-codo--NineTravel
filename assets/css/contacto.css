@@ -52,6 +52,9 @@ main {
 .datos-contacto div{
     margin: auto;
 }
+.datos-contacto img{
+    padding: 20px;
+}
 
 /* TAMAÑO DEL DESKTOP */
 @media screen and (min-width: 1024px) {
