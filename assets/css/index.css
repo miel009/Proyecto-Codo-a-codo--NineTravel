@@ -18,6 +18,8 @@
 /*preguntas frecuenets*/
 main{
     background-color: var(--four-color);
+    height: 100%;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .containerPreg {
