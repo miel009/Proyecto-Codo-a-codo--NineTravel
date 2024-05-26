@@ -15,7 +15,6 @@
 .cards-container {
     justify-content: center;
 }
-
 /*preguntas frecuenets*/
 main{
     background-color: var(--four-color);
@@ -60,9 +59,7 @@ main{
     font-size: 20px;
     padding-top: 40px;
     padding-bottom: 5px;
-
 }
-
 
 .accordion-button {
     background-color: #f8f9fa;
