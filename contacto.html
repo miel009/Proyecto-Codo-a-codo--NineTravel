@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <title> NineTravel</title>
 </head>
+
 <body>
     <header>
         <div class="navbar">
@@ -17,9 +19,9 @@
             <nav id="menu_list">
                 <ul>
                     <li><a href="index.html" title="Inicio"><div class="bi bi-house-fill"></div> <span class="icon_text">Inicio</span></a></li>
-                    <li><a href="destinos.html" title="Destinos"><div class="bi bi-geo-fill"></div> <span class="icon_text">Destinos</span> </a></li>
-                    <li><a href="paquetes.html" title="Paquetes"><div class="bi bi-folder-fill"></div> <span class="icon_text">Paquetes</span> </a></li>
-                    <li><a href="#" title="Contacto"><div class="bi bi-person-badge"></div> <span class="icon_text">Contacto</span> </a></li>
+                    <li><a href="destinos.html" title="Destinos"><div class="bi bi-geo-fill"></div> <span class="icon_text">Destinos</span></a></li>
+                    <li><a href="paquetes.html" title="Paquetes"><div class="bi bi-folder-fill"></div> <span class="icon_text">Paquetes</span></a></li>
+                    <li><a href="#" title="Contacto"><div class="bi bi-person-badge"></div> <span class="icon_text">Contacto</span></a></li>
                 </ul>
             </nav>
             <div id="list" onclick="toggleMenu()">
@@ -33,11 +35,11 @@
             <h2>Contacto</h2>
             <form>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"  required>
-        
+                <input type="text" id="nombre" name="nombre" required>
+
                 <label for="email">Correo Electrónico:</label>
                 <input type="email" id="email" name="email" required>
-        
+
                 <label for="destino">Destino:</label>
                 <input type="text" id="destino" name="destino" required>
 
@@ -46,7 +48,7 @@
 
                 <label for="fecha-aproximada">Fecha aproximada:</label>
                 <input type="date" id="fecha-aproximada" name="fecha-aproximada" required>
-        
+
                 <label for="mensaje">Motivo de Contacto:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
@@ -61,65 +63,78 @@
                 <p><small>E-mail : consultas@nocheydiaturismo.com</small></p>
                 <h2>Horarios de Atención</h2>
                 <p><small>Lunes a Viernes de 10 a 13 hs y de 14 a 18 h</small></p>
-                <p><small>Sábados de 10 a 13 h</small></p>                
+                <p><small>Sábados de 10 a 13 h</small></p>
             </div>
-            <img
-            src="assets/img/mapa.jpeg">
-            </img>
+            <img src="assets/img/mapa.jpeg"></img>
         </section>
     </main>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Modal Header</h2>
+                <span class="close bi bi-x-circle"></span>
 
-    <footer>       
+            </div>
+            <div class="modal-body">
+                <p id="modal-message">¡Gracias Agustín! Recibimos tu consulta, te contestaremos a la dirección que
+                    proporcionaste.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
         <!-- princ-->
-   <div class="conteiner-footer">
+        <div class="conteiner-footer">
             <p class="pie">
-                <i class="bi bi-geo-alt"></i> Av. Caseros 3040, Buenos Aires, Argentina.                
-            </p> 
-            <p class="pie"> 
-                <i class="bi bi-envelope-at"></i> TravelNine@gmail.com
+                <i class="bi bi-geo-alt"></i> <span> Av. Caseros 3040, Buenos Aires, Argentina.</span>
             </p>
-            <p class="pie"> 
-                <i class="bi bi-telephone-inbound"></i> 4250-7030
-            </p> 
-            <p class="pie"> 
-                <i class="bi bi-phone"></i> +54 9 11 2044-5680
-            </p> 
+            <p class="pie">
+                <i class="bi bi-envelope-at"></i> <span> TravelNine@gmail.com </span>
+            </p>
+            <p class="pie">
+                <i class="bi bi-telephone-inbound"></i> <span> 4250-7030 </span>
+            </p>
+            <p class="pie">
+                <i class="bi bi-phone"></i> <span> +54 9 11 2044-5680 </span>
+            </p>
         </div>
 
         <div class="text-center">
             <p>Seguinos para mas novedades! </p>
             <ul class="list-unstyled list-inline">
-                <li > 
+                <li>
                     <a href="#" class="icono-foter"> <i class="fab fa-facebook"> </i> </a>
                 </li>
 
-                <li> 
+                <li>
                     <a href="#" class="icono-foter"> <i class="fab fa-twitter"> </i> </a>
                 </li>
 
-                <li> 
+                <li>
                     <a href="#" class="icono-foter"> <i class="fab fa-google-plus"> </i> </a>
                 </li>
 
-                <li> 
+                <li>
                     <a href="#" class="icono-foter"> <i class="fab fa-linkedin"> </i> </a>
                 </li>
 
-                <li> 
+                <li>
                     <a href="#" class="icono-foter"> <i class="fab fa-youtube"> </i> </a>
                 </li>
             </ul>
         </div>
 
         <div class="text-center">
-            <p> &copy; 2024 NineTravel          
-            Todos los derechos reservados. </p>  
-            
+            <p> &copy; 2024 NineTravel Todos los derechos reservados. </p>
         </div>
 
-</footer>
+    </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/contacto.js"></script>
 </body>
+
 </html>
