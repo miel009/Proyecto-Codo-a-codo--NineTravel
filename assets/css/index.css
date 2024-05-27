@@ -25,8 +25,8 @@ main{
 .containerPreg {
     margin-top: 0px;
     margin-bottom: 20px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /*del h2 del index*/
 .descripcion { 
@@ -90,7 +90,7 @@ main{
 /* noticias*/
 
 .container {
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
 }
 
@@ -209,4 +209,15 @@ main{
     main h2 {
         font-size: 40px;
     }
+    .containerPreg {
+        max-width: 540px;
+        padding: 15px;
+    }
+    .accordion-button {
+        font-size: 0.85rem;
+    }
+    .accordion-body {
+        font-size: 0.8rem;
+    }
 }
+
